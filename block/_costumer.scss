@@ -1,0 +1,110 @@
+.costumer {
+  width: 100%;
+  margin-top: 150px;
+
+  .costumer__container {
+    background: linear-gradient(208deg, #67c3f3 0%, #5a98f2 100%);
+    border-radius: 24px;
+    color: white;
+    position: relative;
+    padding: 60px 0;
+    margin: 0 auto;
+  }
+
+  .costumer__title {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    margin: 20px 300px;
+  }
+
+  .costumer__hr {
+    width: 56px;
+    height: 3px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 20px;
+    border: none;
+  }
+
+  .costumer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  .costumer__profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .costumer__img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+  }
+
+  .costumer__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .costumer__name {
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .costumer__role {
+    font-size: 18px;
+    opacity: 0.85;
+  }
+
+  .costumer__quote {
+    flex-basis: 50%;
+    font-size: 19px;
+    line-height: 1.6;
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 1200px) {
+  .costumer__container {
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+
+    .costumer__title {
+      width: 100%;
+      text-align: center;
+      margin: auto;
+    }
+
+    .costumer__hr {
+      margin-top: 30px;
+    }
+
+    .costumer__profile {
+      margin: 20px auto;
+    }
+
+    .costumer__text {
+      width: 90%;
+      text-align: center;
+      margin: auto;
+    }
+
+    .costumer__content {
+      width: 90%;
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+}

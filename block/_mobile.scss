@@ -1,0 +1,106 @@
+.mobile {
+  width: 100%;
+  margin-top: 100px;
+
+  .mobile__container {
+    @include flex;
+  }
+
+  .mobile__title {
+    width: 450px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    /* or 117% */
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+  }
+
+  .mobile__hr {
+    width: 55px;
+    height: 3px;
+    background: #000000;
+    border-radius: 10px;
+    border: none;
+    margin-left: 1px;
+  }
+
+  .mobile__text {
+    width: 445px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    /* or 152% */
+
+    color: #7d7987;
+
+    mix-blend-mode: normal;
+    margin: 30px 0;
+  }
+
+  .mobile__btn {
+    width: 200px;
+    height: 57px;
+    background: #458ff6;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 55px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 60px;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    border: none;
+    transition: all 1s ease;
+  }
+
+  .mobile__btn:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+
+  .mobile__btn:active {
+    background: black;
+    transition: all 0.4s ease;
+  }
+}
+
+@media (max-width: 1200px) {
+  .mobile__container {
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+
+    .mobile__title {
+      width: 100%;
+      text-align: center;
+    }
+
+    .mobile__hr {
+      margin: auto;
+    }
+
+    .mobile__text {
+      width: 90%;
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    .mobile__btn {
+      width: 70%;
+      margin: 60px;
+    }
+
+    .mobile__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

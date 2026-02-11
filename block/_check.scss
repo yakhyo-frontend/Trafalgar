@@ -1,0 +1,110 @@
+.check {
+  width: 100%;
+  margin-top: 100px;
+
+  .check__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .check__img {
+    width: 350px;
+    height: 240px;
+    margin-top: 80px;
+    border-radius: 16px;
+  }
+
+  .check__header {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    /* or 152% */
+
+    color: #000000;
+
+    mix-blend-mode: normal;
+  }
+
+  .check__text {
+    /* In this case, the role of the health laboratory is very important to do a disease detection... */
+    width: 366px;
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    /* or 175% */
+
+    color: #7d7987;
+
+    mix-blend-mode: normal;
+  }
+
+  .check__foot {
+    width: 260px;
+    height: 25px;
+    font-size: 17px;
+    color: #4089ed;
+  }
+
+  .check__title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .check__hr {
+    height: 5px;
+    background-color: black;
+    width: 60px;
+    border-radius: 50px;
+    margin-top: 15px;
+  }
+
+  .check__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .check__btn {
+    width: 150px;
+    height: 50px;
+    border-color: #458ff6;
+    border-radius: 55px;
+    color: #458ff6;
+    font-size: 15px;
+    padding-top: 5px;
+    margin-top: 15px;
+    background-color: white;
+    margin: 40px 0;
+    transition: all 1s ease;
+  }
+
+  .check__btn:hover {
+    transform: scale(1.1);
+    transition: all 1s ease;
+  }
+
+  .check__btn:active {
+    background: blue;
+    transition: all 0.4s ease;
+  }
+}
+
+@media (max-width: 1200px) {
+  .check {
+    width: 90%;
+    flex-direction: column;
+    margin: 50px auto;
+
+    .check__cards {
+      flex-direction: column;
+      margin: auto;
+    }
+  }
+}

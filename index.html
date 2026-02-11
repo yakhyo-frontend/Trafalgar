@@ -1,18 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
     <title>Trafalgar</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar container">
       <nav class="navbar__nav container">
-        <img src="./assets/logo (3).png" alt="Trafalgar" />
+        <img src="./images/logo (3).png" alt="Trafalgar" />
         <ul class="navbar__menu">
           <li class="navbar__item">
-            Home<a href="#" class="navbar__link"></a>
+            <span> Home</span>
+            <a href="#" class="navbar__link"></a>
           </li>
           <li class="navbar__item">
             Find a doctor<a href="#" class="navbar__link"></a>
@@ -27,20 +34,31 @@
             About us<a href="#" class="navbar__link"></a>
           </li>
         </ul>
+
+        <div class="navbar__burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </nav>
     </header>
+
     <main>
-      <section class="hero">
-        <div class="container hero__container">
-          <div class="hero__left">
-            <h1 class="hero__title">Virtual healthcare for you</h1>
-            <p class="hero__text">
+      <section class="intro">
+        <div class="intro__container container">
+          <div class="intro__left">
+            <h1 class="intro__title">Virtual healthcare for you</h1>
+            <p class="intro__text">
               Trafalgar provides progressive, and affordable healthcare,
               accessible on mobile and online for everyone
             </p>
-            <button class="hero__btn">Consult today</button>
+            <button class="intro__btn">Consult today</button>
           </div>
-          <img class="hero__img" src="./assets/illustration.png" alt="Doctor" />
+          <img
+            class="intro__img"
+            src="./images/illustration.png"
+            alt="Doctor"
+          />
         </div>
       </section>
       <section class="services">
@@ -56,7 +74,7 @@
 
           <div class="services__cards">
             <div class="cards__card">
-              <img src="./assets/lupa.svg" alt="Lupa" class="card__img" />
+              <img src="./images/lupa.svg" alt="Lupa" class="card__img" />
               <h3 class="card__title">Search doctor</h3>
               <p class="card__text">
                 Choose your doctor from thousands of specialist, general, and
@@ -64,7 +82,7 @@
               </p>
             </div>
             <div class="cards__card">
-              <img src="./assets/Frame.png" alt="Frame" class="card__img" />
+              <img src="./images/Frame.png" alt="Frame" class="card__img" />
               <h3 class="card__title">Online pharmasy</h3>
               <p class="card__text">
                 Buy your medicines with our mobile application with a simple
@@ -72,7 +90,7 @@
               </p>
             </div>
             <div class="cards__card">
-              <img src="./assets/Frame (1).png" alt="Man" class="card__img" />
+              <img src="./images/Frame (1).png" alt="Man" class="card__img" />
               <h3 class="card__title">Consultation</h3>
               <p class="card__text">
                 Free consultation with our trusted doctors and get the best
@@ -80,15 +98,19 @@
               </p>
             </div>
             <div class="cards__card">
-              <img src="./assets/Frame (2).png" alt="Info" class="card__img" />
-              <h3 class="card__title">Details info</h3>
+              <img
+                src="./images/Frame (2).png"
+                alt="leading"
+                class="card__img"
+              />
+              <h3 class="card__title">Details leading</h3>
               <p class="card__text">
                 Free consultation with our trusted doctors and get the best
                 recomendations
               </p>
             </div>
             <div class="cards__card">
-              <img src="./assets/Frame (3).png" alt="Care" class="card__img" />
+              <img src="./images/Frame (3).png" alt="Care" class="card__img" />
               <h3 class="card__title">Emergency care</h3>
               <p class="card__text">
                 You can get 24/7 urgent care for yourself or your children and
@@ -96,89 +118,100 @@
               </p>
             </div>
             <div class="cards__card">
-              <img src="./assets/Group.png" alt="Tracking" class="card__img" />
+              <img src="./images/Group.png" alt="Tracking" class="card__img" />
               <h3 class="card__title">Tracking</h3>
               <p class="card__text">
                 Track and save your medical history and health data
               </p>
             </div>
           </div>
+
+          <button class="card__btn">Learn more</button>
         </div>
       </section>
 
-      <section class="info">
-        <div class="container info__container">
+      <section class="leading">
+        <div class="container leading__container">
           <img
-            class="info__img"
-            src="./assets/illustration.png"
+            class="leading__img"
+            src="./images/illustration.png"
             alt="Doctors
           talking"
+            width="600"
+            height="500"
           />
-          <div class="info__right">
-            <h2 class="info__title">Leading healthcare providers</h2>
-            <hr class="info__hr" />
-            <p class="info__text">
+          <div class="leading__right">
+            <h2 class="leading__title">Leading healthcare providers</h2>
+            <hr class="leading__hr" />
+            <p class="leading__text">
               Trafalgar provides progressive, and affordable healthcare,
               accessible on mobile and online for everyone. To us, it’s not just
               work. We take pride
             </p>
-            <button class="info__btn">Learn more</button>
+            <button class="leading__btn">Learn more</button>
           </div>
         </div>
       </section>
 
-      <section class="promo">
-        <div class="container promo__container">
-          <div class="promo__left">
-            <h2 class="promo__title">Download our mobile apps</h2>
-            <hr class="promo__hr" />
-            <p class="promo__text">
+      <section class="mobile">
+        <div class="container mobile__container">
+          <div class="mobile__left">
+            <h2 class="mobile__title">Download our mobile apps</h2>
+            <hr class="mobile__hr" />
+            <p class="mobile__text">
               Our dedicated patient engagement app and web portal allow you to
-              access information instantaneously (no tedeous form, long calls,
-              or administrative hassle) and securely
+              access leadingrmation instantaneously (no tedeous form, long
+              calls, or administrative hassle) and securely
             </p>
-            <button class="promo__btn">Download ↓</button>
+            <button class="mobile__btn">Download ↓</button>
           </div>
           <img
-            src="./assets/trafalgar-illustration sec03 1 (1).png"
-            alt="Promo"
-            class="promo__img"
+            src="./images/trafalgar-illustration sec03 1 (1).png"
+            alt="mobile"
+            class="mobile__img"
+            width="600"
+            height="400"
           />
         </div>
       </section>
 
-      <section class="bio">
-        <div class="bio__container container">
-          <center>
-            <h1 class="bio__title">What our customer are saying</h1>
-            <hr class="bio__hr" />
-          </center>
-          <div class="bio__center"></div>
-          <div class="bio__left">
-            <img src="./assets/image 1.png" alt="Man" class="bio__img" />
-            <p class="bio__man">
-              Edward Newgate <br />
-              Founder Circle
-            </p>
-          </div>
-          <div class="bio__right">
-            <p class="bio__left">
-              “Our dedicated patient engagement app and web portal allow you to
-              access information instantaneously (no tedeous form, long calls,
-              or administrative hassle) and securely”
-            </p>
+      <section class="costumer">
+        <div class="costumer__container container">
+          <h2 class="costumer__title">What our customer are saying</h2>
+          <hr class="costumer__hr" />
+
+          <div class="costumer__content">
+            <div class="costumer__profile">
+              <img
+                src="./images/image 1.png"
+                alt="Edward Newgate"
+                class="costumer__img"
+              />
+              <div class="costumer__info">
+                <span class="costumer__name">Edward Newgate</span>
+                <span class="costumer__role">Founder Circle</span>
+              </div>
+            </div>
+
+            <div class="costumer__quote">
+              <p>
+                “Our dedicated patient engagement app and web portal allow you
+                to access information instantaneously (no tedious form, long
+                calls, or administrative hassle) and securely”
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="check__section">
+      <section class="check">
         <div class="check__container container">
           <h2 class="check__title">Check out our latest article</h2>
           <hr class="check__hr" />
 
           <div class="check__cards">
             <div class="check__card">
-              <img src="./assets/image 2.png" alt="Doctor" class="check__img" />
+              <img src="./images/image 2.png" alt="Doctor" class="check__img" />
               <h3 class="check__header">
                 Disease detection, check up in the laboratory
               </h3>
@@ -193,7 +226,7 @@
 
             <div class="check__card">
               <img
-                src="./assets/Mask Group.png"
+                src="./images/Mask Group.png"
                 alt="Mask"
                 class="check__img"
               />
@@ -210,7 +243,7 @@
             </div>
 
             <div class="check__card">
-              <img src="./assets/image 3.png" alt="Woman" class="check__img" />
+              <img src="./images/image 3.png" alt="Woman" class="check__img" />
               <h3 class="check__header">
                 Natural care for healthy facial skin
               </h3>
@@ -222,8 +255,8 @@
                 <a class="check__link" href="#">Read more ➡</a>
               </h3>
             </div>
-            <!-- <button class="check__btn">View all</button> -->
           </div>
+          <button class="check__btn">View all</button>
         </div>
       </section>
 
@@ -231,7 +264,7 @@
         <div class="footer__container container">
           <div class="footer__left">
             <img
-              src="./assets/Group 7.png"
+              src="./images/Group 7.png"
               alt="Footer logo"
               class="footer__img"
             />
@@ -243,6 +276,7 @@
               ©Trafalgar PTY LTD 2020. All rights reserved
             </p>
           </div>
+
           <div class="footer__right">
             <div class="footer__right_menu">
               <h3 class="footer__title">Company</h3>
